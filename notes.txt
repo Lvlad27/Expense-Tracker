@@ -1,0 +1,11 @@
+The challenge should be to listen to changes on that dropdown,
+When user selects new year, you should listen to that event and make sure that this picked year is in the end forwarded to the expenses component,
+Add the expense filter in there and fw the picked year from the expense filter to the expenses component and store it in a state.
+
+- listen to the change event
+    - add event listener to component
+- fw the data to a higher level component (expense component)
+    - In the parent component, create a callback function. This callback function will retrieve the data from the child component.
+    - Pass the callback function to the child as a props from the parent component.
+    - The child component calls the parent callback function using props and passes the data to the parent component.
+- store the component in a state
