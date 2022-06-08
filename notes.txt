@@ -1,11 +1,39 @@
-The challenge should be to listen to changes on that dropdown,
-When user selects new year, you should listen to that event and make sure that this picked year is in the end forwarded to the expenses component,
-Add the expense filter in there and fw the picked year from the expense filter to the expenses component and store it in a state.
+REACT BASICS AND WORKING WITH COMPONENTS
 
-- listen to the change event
-    - add event listener to component
-- fw the data to a higher level component (expense component)
-    - In the parent component, create a callback function. This callback function will retrieve the data from the child component.
-    - Pass the callback function to the child as a props from the parent component.
-    - The child component calls the parent callback function using props and passes the data to the parent component.
-- store the component in a state
+    composition = approach of building a UI from smaller building blocks.
+
+    Custom components that serve as wrappers do not support adding className. To make   sure that a className can be set on the component, we have to tweak the code.
+        function Card(props) {
+        const classes = 'card ' + props.className;
+        return <div className={classes}>{props.children}</div>;
+        }
+
+REACT STATE AND WORKING WITH EVENTS
+
+    Child-to-Parent Component Communication
+        - In the parent component, create a callback function. This callback function will retrieve data from the child component.
+        - Pass the callback function to the child as a props from the parent component
+        - The child component calls the parent callback function using props and passes the data to the parent component.
+
+        1) Create child component markup.
+            1.1) Create event handler function for event
+            1.2) Add event prop to element
+        2) Add child component to parent component.
+            2.1) Add on'FunctionName' as prop to Parent component
+            2.2) Add callback function to parent component that receives parameter of initial state of child component.
+            2.3) Add callback function as prop value of parent component. (it is not called but just points to the function)
+            2.4) 
+
+        The challenge should be to listen to changes on that dropdown,
+        When user selects new year, you should listen to that event and make sure that  this picked year is in the end forwarded to the expenses component,
+        Add the expense filter in there and fw the picked year from the   expense filter    to the expenses component and store it in a state.
+
+        Listen to the change event
+            - add event listener to component
+        Forward the data to a higher level component (expense component)
+            - Child-to-Parent Component Communication
+        Store the component in a state
+
+    Controlled vs Uncontrolled Components (stateful vs stateless components || Dumb vs Smart Components)
+        - In all React Apps we'll have components that manage state (Expense component manages YearSelection State or the ExpenseForm component which manage the Input state)and other components which don't (like ExpenseItem.js) that are there just to output(present) some data.
+        - There are more stateless components than stateful components.
