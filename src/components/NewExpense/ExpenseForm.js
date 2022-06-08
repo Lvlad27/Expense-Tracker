@@ -9,7 +9,7 @@ function ExpenseForm() {
     //     enteredTitle: '',
     //     enteredAmount: '',
     //     enteredDate: '',
-    // });
+    // })
 
     function titleChangeHandler(event) {
         setEnteredTitle(event.target.value);
