@@ -37,3 +37,18 @@ REACT STATE AND WORKING WITH EVENTS
     Controlled vs Uncontrolled Components (stateful vs stateless components || Dumb vs Smart Components)
         - In all React Apps we'll have components that manage state (Expense component manages YearSelection State or the ExpenseForm component which manage the Input state)and other components which don't (like ExpenseItem.js) that are there just to output(present) some data.
         - There are more stateless components than stateful components.
+
+RENDERING LISTS AND CONDITIONAL CONTENT
+
+
+useState HOOK
+    About Hooks:
+    - hooks can only be used inside function components
+    - hooks must execute in the same order
+    
+    useState:
+    - always returns an array with 2 values.
+        the first value is state
+        the second value is a function that allows to update our state
+    - takes in hardcoded values but also functions.
+        the function only runs the first time the component renders    
