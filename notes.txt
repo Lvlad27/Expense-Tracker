@@ -51,4 +51,7 @@ useState HOOK
         the first value is state
         the second value is a function that allows to update our state
     - takes in hardcoded values but also functions.
-        the function only runs the first time the component renders    
+        the function only runs the first time the component renders
+ 
+CHALLENGE #067
+    - add event handler function to form
