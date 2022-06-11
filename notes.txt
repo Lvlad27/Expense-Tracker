@@ -51,7 +51,11 @@ useState HOOK
         the first value is state
         the second value is a function that allows to update our state
     - takes in hardcoded values but also functions.
-        the function only runs the first time the component renders
- 
-CHALLENGE #067
-    - add event handler function to form
+        the function only runs the first time the component renders    
+
+
+***
+- filter arrays with the filter method
+- should not change the overall expenses arrays
+- derive a new array based on the old expenses array which is a subset for that array for the chosen filter.
+***
